@@ -1,8 +1,8 @@
-import styled from '@emotion/styled'
-import { Typography, Button } from '@mui/material'
+import styled from '@emotion/styled';
+import { Typography, Button } from '@mui/material';
 
-const backgroundColor = 'white'
-const textColor = 'black'
+const backgroundColor = 'white';
+const textColor = 'black';
 
 const HeaderBox = styled('div')`
   position: absolute;
@@ -10,7 +10,7 @@ const HeaderBox = styled('div')`
   width: calc(100% - 5px);
   border-bottom: 1px dashed gray;
   color: ${textColor};
-`
+`;
 
 const InnerBox = styled('div')`
   position: relative;
@@ -20,7 +20,7 @@ const InnerBox = styled('div')`
   margin-top: 5px;
   margin-bottom: 5px;
   overflow: hidden;
-`
+`;
 
 const LowerButton = styled(Button)`
   position: absolute;
@@ -31,7 +31,7 @@ const LowerButton = styled(Button)`
   &:hover {
     background-color: ${backgroundColor};
   }
-`
+`;
 
 const TextArea = styled('textarea')`
   font-family: monospace;
@@ -45,14 +45,14 @@ const TextArea = styled('textarea')`
   outline: none;
   background-color: ${backgroundColor};
   color: ${textColor};
-`
+`;
 
 export const OutputArea = ({
   outputValue,
-  setOutputValue
+  setOutputValue,
 }: {
-  outputValue: string
-  setOutputValue: (string) => void
+  outputValue: string;
+  setOutputValue: (string) => void;
 }) => {
   return (
     // <OuterBox>
@@ -66,5 +66,5 @@ export const OutputArea = ({
       </LowerButton>
     </InnerBox>
     // </OuterBox>
-  )
-}
+  );
+};
