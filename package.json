@@ -2,7 +2,6 @@
   "name": "ketcher",
   "private": true,
   "workspaces": [
-     "start": "node server.js",
     "packages/ketcher-core",
     "packages/ketcher-standalone",
     "packages/ketcher-macromolecules",
@@ -14,6 +13,7 @@
     "demo"
   ],
   "scripts": {
+    "start": "node server.js",
     "postinstall": "husky install",
     "precommit": "lint-staged --allow-empty && npm run prettier:write --workspaces --if-present",
     "prepush": "npm run test && npm run test:types",
