@@ -2,6 +2,7 @@
   "name": "ketcher",
   "private": true,
   "workspaces": [
+     "start": "node server.js",
     "packages/ketcher-core",
     "packages/ketcher-standalone",
     "packages/ketcher-macromolecules",
