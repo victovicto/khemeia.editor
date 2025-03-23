@@ -13,7 +13,7 @@
     "demo"
   ],
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
     "postinstall": "husky install",
     "precommit": "lint-staged --allow-empty && npm run prettier:write --workspaces --if-present",
     "prepush": "npm run test && npm run test:types",
